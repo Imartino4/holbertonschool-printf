@@ -34,8 +34,8 @@ int func_aux(char s, va_list ptr)
 		}
 		else
 		{
-			return(-1);
+			return (-1);
 		}
 	}
-	return(k);
+	return (k);
 }
