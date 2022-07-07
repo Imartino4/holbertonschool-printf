@@ -51,7 +51,7 @@ int _printf(const char *format, ...)
 					}
 					else
 					{
-						return (c_len);
+						return (-1);
 					}
 				}
 			}
