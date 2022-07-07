@@ -16,11 +16,6 @@ int _printf(const char *format, ...)
 		va_start(ptr, NULL);
 		for (i = 0; format[i]; i++)
 		{
-			if (format[i] != '%')
-			{
-				_putchar(format[i]);
-				c_len++;
-			}
 			if (format[i] == '%')
 			{
 				i++;
@@ -30,6 +25,11 @@ int _printf(const char *format, ...)
 					c_len++;
 				}
 				c_len = c_len + func_aux(format[i], ptr);
+			}
+			else
+			{
+				_putchar(format[i]);
+				c_len++;
 			}
 		}
 		return (c_len);
