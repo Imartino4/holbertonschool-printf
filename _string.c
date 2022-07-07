@@ -16,5 +16,15 @@ int _string(va_list ptr)
 		for (i = 0; value[i] != 0; i++)
 			_putchar(value[i]);
 	}
-	return (i);
+	else
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		i = 6;
+	}
+	return (i); /*the quantity of iteration is equal to th number of characters*/
 }
