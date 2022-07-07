@@ -26,7 +26,7 @@ int func_aux(char s, va_list ptr)
 	}
 	if (pf_aux[j].type == '\0' && s != '%' && s != ' ')
 	{
-		if (s != '\0')
+		if (s)
 		{
 			_putchar('%');
 			_putchar(s);
