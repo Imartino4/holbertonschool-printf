@@ -9,11 +9,11 @@
 int _printf(const char *format, ...)
 {
 	/*Define struct with type and corresponding function*/
-	pf_aux pf_aux[] = {
+/*	pf_aux pf_aux[] = {
 		{"c", _char}, {"s", _string}, {NULL, NULL}
 	};
-	va_list ptr;
-	unsigned int i = 0, c_len = 0, j = 0;
+*/	va_list ptr;
+	unsigned int i = 0, c_len = 0;
 
 	if (format)
 	{
@@ -33,7 +33,8 @@ int _printf(const char *format, ...)
 					_putchar('%');
 					c_len++;
 				}
-				for (j=0; pf_aux[j].type != NULL; j++)
+				c_len = c_len + opt(format[i], ptr);
+/*				for (j = 0; pf_aux[j].type != NULL; j++)
 				{
 					if (*pf_aux[j].type == format[i])
 					{
@@ -53,8 +54,8 @@ int _printf(const char *format, ...)
 					{
 						return (-1);
 					}
-				}
 			}
+	*/		}
 		}
 		return (c_len);
 	}
