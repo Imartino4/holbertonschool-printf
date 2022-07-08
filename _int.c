@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdarg.h>
 /**
- * _int - print an integer 
+ * _int - print an integer
  * @ptr: pointer to argument to be printed
  *
  * Return: quantity of character
@@ -35,7 +35,7 @@ int _int(va_list ptr)
 		n = n / 10;
 	}
 	n = n_dig;
-	for (i= 0; i < n; i++, n_dig--)
+	for (i = 0; i < n; i++, n_dig--)
 	{
 		div = _pow_integers(10, n_dig - 1);
 		_putchar((num2 / div) % 10 + '0');
