@@ -22,7 +22,10 @@ int _int(va_list ptr)
 
 	}
 	else if (num == 0)
+	{
 		_putchar (num + '0');
+		c++;
+	}
 	else
 		num2 = num;
 	n = num2;
