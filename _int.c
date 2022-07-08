@@ -11,7 +11,7 @@
 int _int(va_list ptr)
 {
 	int i = 0, c = 0, n, n_dig = 0, div, num;
-	unsigned int num2;
+	/*unsigned int num2;*/
 
 	num = va_arg(ptr, int);
 	if (num < 0)
