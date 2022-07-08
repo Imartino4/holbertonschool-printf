@@ -10,9 +10,8 @@
 int func_aux(char s, va_list ptr)
 {
 	pf_aux pf_aux[] = {
-		{'c', _char},
-		{'s', _string},
-		{'\0', NULL}
+		{'c', _char}, {'s', _string}, {'i', _int},
+		{'d', _int}, {'\0', NULL}
 	};
 	int j = 0, k = 0;
 
