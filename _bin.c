@@ -13,7 +13,11 @@ int _bin(va_list ptr)
 	
 
 	num = va_arg(ptr, unsigned int);
-
+	if (num == 0)
+	{
+		_putchar(num + '0');
+		return (1);
+	}
 	while(num >= 1)
 	{
 		str[i]=(num % 2);
