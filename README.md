@@ -34,6 +34,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 <pre><code>int main(void)
 {
 	_printf("%c\n", "H");
+	return(0);
 }</code></pre>
 	
 	Output: H
@@ -43,6 +44,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 {
 	string = "World";
 	_printf("%s-%s\n", "Hello", string);
+	return(0);
 }</code></pre>
 
 	Output: Hello-World
@@ -52,6 +54,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 {
 	int i = 128;
 	_printf("%d-%d\n", 29, i);
+	return(0);
 }</code></pre>
 
 	Output: 29-128
@@ -62,15 +65,17 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 {
 	int i = 35;
 	_printf("There is a %i %% chance of rain\n", i);
+	return(0);
 }</code></pre>
 
 	Output: There is a 35 % chance of rain
 
-5- Converting a int to binary:
+5- Converting a int to binary
 <pre><code>int main(void)
 {
 	int i = 777;
 	_printf("The number %i in binary notation is: %b", i, i);
+	return(0);
 }</code></pre>
 
 	Output: The number 777 in binary notation is 1100001001
