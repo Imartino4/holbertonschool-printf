@@ -30,7 +30,7 @@ graph TD;
     f1{is format != '\0' ?}-->|yes|fl(for loop);
 
 
-    fl(for loop)-->if[/is format [ i ] = '%'/];
+    fl(for loop)-->if[/"is format [i] = '%'"/];
 
 ```
 
