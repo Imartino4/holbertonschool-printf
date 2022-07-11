@@ -17,13 +17,14 @@ This function displays on screen a string using argument given by the operator
 <h3>Return value</h3>
 In case of succes this function return the number of printed characters (null character is not included), otherwise returns -1.
 
+<h2> Traying to do the flowchard</h2>
 
 ```mermaid
 graph TD;
 
-    Start-->C;
-    Yes-->D;
-    No-->E;
+    Start-->Yes;
+    Start-->No;
+    No-->Start;
 ```
 
 <h2> Format </h2>
