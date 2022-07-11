@@ -22,7 +22,7 @@ In case of succes this function return the number of printed characters (null ch
 ```mermaid
 graph TD;
 
-    ((Start))-->{format};
+    (Start)-->{format};
     {format}-->|yes|(traverse format);
     (traverse format)-->{format[i] == '%'};
 
