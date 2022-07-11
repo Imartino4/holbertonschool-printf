@@ -22,16 +22,8 @@ In case of succes this function return the number of printed characters (null ch
 ```mermaid
 graph TD;
 
-    s((Start))-->f{format};
-    f{format}-->|yes|t(traverse format);
+    s((Start))-->i(/imput: const char *format, .../);
 
-    t(traverse format)-->fi{format in 'i' == '%'};
-
-    fi{format 'i' == '%'}-->|yes|fim{format 'i + 1'};
-
-    fim{format 'i + 1'}-->|no|idr(return Error code);
-    f{format}-->|no|idr(return Error code);
-    idr(return Error code)-->e((End));
 ```
 
 <h2> Format </h2>
