@@ -7,6 +7,10 @@ int _char(va_list ptr);
 int _string(va_list ptr);
 int _int(va_list);
 int _bin(va_list);
+int _ui(va_list);
+int _octal(va_list);
+int _hexa(va_list);
+int _hexa_upper(va_list);
 int func_aux(char, va_list);
 int _pow_integers(int, int);
 
