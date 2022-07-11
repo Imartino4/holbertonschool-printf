@@ -17,10 +17,15 @@ This function displays on screen a string using argument given by the operator
 <h3>Return value</h3>
 In case of succes this function return the number of printed characters (null character is not included), otherwise returns -1.
 
-<mermaid>
-Flowchart TD
-	A-->B
-<mermaid/>
+```plantuml
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+```
 
 <h2> Format </h2>
 The format string is a constant character string. It is composed of ordinary characters and conversion specifications ('s', 'c', 'd', 'i' and 'b').
