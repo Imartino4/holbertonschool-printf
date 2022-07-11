@@ -11,6 +11,11 @@ int _ui(va_list ptr)
 
 	num = va_arg(ptr, unsigned int);
 	n = num;
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (n > 0)
 	{
 		n = n / 10;
