@@ -31,7 +31,7 @@ graph TD;
 
     y(yes)-->fl(for loop);
 
-    fl(for loop)-->if[/is format[i] = '%'/];
+    fl(for loop)-->if[/is format'['i']' = '%'/];
 
 ```
 
