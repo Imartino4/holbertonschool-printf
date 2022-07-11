@@ -17,6 +17,15 @@ This function displays on screen a string using argument given by the operator
 <h3>Return value</h3>
 In case of succes this function return the number of printed characters (null character is not included), otherwise returns -1.
 
+<h2> Traying to do the flowchard</h2>
+
+```mermaid
+graph TD;
+
+    s((Start))-->i(/imput: const char *format, .../);
+
+```
+
 <h2> Format </h2>
 The format string is a constant character string. It is composed of ordinary characters and conversion specifications ('s', 'c', 'd', 'i' and 'b').
 Conversion specifications are introduced by a '%' (for example %s if you want to give a string as argument).
