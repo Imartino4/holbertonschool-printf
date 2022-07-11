@@ -10,7 +10,6 @@ int _bin(va_list ptr)
 {
 	int c = 0;
 	unsigned int num, i = 1, str[1024];
-	
 
 	num = va_arg(ptr, unsigned int);
 	if (num == 0)
@@ -18,9 +17,9 @@ int _bin(va_list ptr)
 		_putchar(num + '0');
 		return (1);
 	}
-	while(num >= 1)
+	while (num >= 1)
 	{
-		str[i]=(num % 2);
+		str[i] = (num % 2);
 		c++;
 		i++;
 		num = num / 2;

@@ -12,7 +12,7 @@ int func_aux(char s, va_list ptr)
 	pf_aux pf_aux[] = {
 		{'c', _char}, {'s', _string}, {'i', _int},
 		{'d', _int}, {'b', _bin}, {'u', _ui}, {'o', _octal},
-	       	{'x', _hexa}, {'X', _hexa_upper}, {'\0', NULL}
+		{'x', _hexa}, {'X', _hexa_upper}, {'\0', NULL}
 	};
 	int j = 0, k = 0;
 
