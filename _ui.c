@@ -28,5 +28,5 @@ int _ui(va_list ptr)
 	}
 	for (i = 0; i < c; i++)
 		_putchar(str[i] + '0');
-	return(c);
+	return (c);
 }

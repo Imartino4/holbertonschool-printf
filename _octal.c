@@ -8,11 +8,11 @@ int _octal(va_list ptr)
 {
 	int c = 0, str[11], i;
 	unsigned int num = va_arg(ptr, unsigned int), n;
-	
+
 	if (num == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	n = num;
 	while (n > 0)
