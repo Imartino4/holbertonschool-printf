@@ -20,10 +20,10 @@ In case of succes this function return the number of printed characters (null ch
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->E;
+
+    Start-->C;
+    Yes-->D;
+    No-->E;
 ```
 
 <h2> Format </h2>
