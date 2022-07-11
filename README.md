@@ -29,8 +29,12 @@ graph TD;
     f1{is format != '\0' ?}-->|no|r1((end, return -1));
     f1{is format != '\0' ?}-->|yes|fl(for loop);
 
+    fl(for loop)-->if{"is format [i] = '%'"};
 
-    fl(for loop)-->if[/"is format [i] = '%'"/];
+    if{"is format [i] = '%'"}-->|yes|if2{"is format[i + 1] = '\0'"};
+
+
+    if{"is format [i] = '%'"}-->|no|r2((end, return -1));
 
 ```
 
