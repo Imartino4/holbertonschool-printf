@@ -27,11 +27,11 @@ graph TD;
     i[/imput: const char *format, .../]-->f1{is format != '\0' ?};
 
     f1{is format != '\0' ?}-->|no|r1((end, return -1));
-    f1{is format != '\0' ?}-->yes;
+    f1{is format != '\0' ?}--> yes;
 
-    yes-->for loop;
+    yes --> for loop;
 
-    for loop-->if[/is format[i] = '%'/];
+    for loop -->if[/is format[i] = '%'/];
 
 ```
 
