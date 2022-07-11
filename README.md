@@ -23,10 +23,14 @@ In case of succes this function return the number of printed characters (null ch
 graph TD;
 
     s((Start))-->i[/imput: const char *format, .../];
+
     i[/imput: const char *format, .../]-->f1{is format != '\0' ?};
+
     f1{is format != '\0' ?}-->|no|r1((end, return -1));
     f1{is format != '\0' ?}-->yes;
+
     yes-->for loop;
+
     for loop-->if[/is format[i] = '%'/];
 
 ```
