@@ -22,9 +22,15 @@ In case of succes this function return the number of printed characters (null ch
 ```mermaid
 graph TD;
 
-    Start-->Yes;
-    Start-->No;
-    No-->Start;
+    ((Start))-->{format};
+    {format}-->|yes|(traverse format);
+    (traverse format)-->{format[i] == '%'};
+
+    {format[i] == '%'}-->|yes|{format[i + 1]};
+
+    {format[i + 1]}-->|no|(return Error code);
+    {format}-->|no|(return Error code);
+    (return Error code)-->((End));
 ```
 
 <h2> Format </h2>
