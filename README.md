@@ -32,9 +32,13 @@ graph TD;
     fl(for loop)-->if{"is format [i] = '%'"};
 
     if{"is format [i] = '%'"}-->|yes|if2{"is format[i + 1] = '\0'"};
+    if{"is format [i] = '%'"}-->|no|p1("print format[i]");
 
+    if2{"is format[i + 1] = '\0'"}-->|yes|((end, return -1));
+    if2{"is format[i + 1] = '\0'"}-->|no|f2(for loop);
+    f2(for loop)-->{"is format[i + 1] = especific char"};
 
-    if{"is format [i] = '%'"}-->|no|r2((end, return -1));
+    {"is format[i + 1] = especific char"}-->|no|"print %, print format[i + 1]";
 
 ```
 
