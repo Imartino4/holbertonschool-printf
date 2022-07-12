@@ -17,7 +17,7 @@ This function displays on screen a string using argument given by the operator
 <h3>Return value</h3>
 In case of succes this function return the number of printed characters (null character is not included), otherwise returns -1.
 
-<h2> Traying to do the flowchard</h2>
+<h2> Program flowchard</h2>
 
 ```mermaid
 graph TD;
@@ -34,7 +34,7 @@ graph TD;
     if{"is format [i] = '%'"}-->|yes|if2{"is format[i + 1] = '\0'"};
     if{"is format [i] = '%'"}-->|no|p1("print format[i]");
 
-    if2{"is format[i + 1] = '\0'"}-->|yes|((end, return -1));
+    if2{"is format[i + 1] = '\0'"}-->|yes|r2((end, return -1));
     if2{"is format[i + 1] = '\0'"}-->|no|f2(for loop);
     f2(for loop)-->{"is format[i + 1] = especific char"};
 
