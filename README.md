@@ -38,7 +38,7 @@ graph TD;
     if2{"is format[i + 1] = '\0'"}-->|no|f2(for loop);
     f2(for loop)-->if3{"is format[i + 1] = especific char"};
 
-    if3{"is format[i + 1] = especific char"}-->|no|"print %, print format[i + 1]";
+    if3{"is format[i + 1] = especific char"}-->|no|["print %, print format[i + 1]"];
 
 ```
 
