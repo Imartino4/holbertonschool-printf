@@ -17,7 +17,7 @@ This function displays on screen a string using argument given by the operator
 <h3>Return value</h3>
 In case of succes this function return the number of printed characters (null character is not included), otherwise returns -1.
 
-<h2> Program flowchard</h2>
+<h2> Program flowchart </h2>
 
 ```mermaid
 graph TD;
@@ -29,17 +29,17 @@ graph TD;
     f1{is format != '\0' ?}-->|no|r1((end, return -1));
     f1{is format != '\0' ?}-->|yes|fl(for loop);
 
-    fl(for loop)-->if{"is format [i] = '%'"};
+    fl(for loop)-->if{"is format [i] = '%' ?"};
 
-    if{"is format [i] = '%'"}-->|yes|if2{"is format[i + 1] = '\0'"};
-    if{"is format [i] = '%'"}-->|no|p1("print format[i]");
+    if{"is format [i] = '%' ?"}-->|yes|if2{"is format[i + 1] = '\0' ?"};
+    if{"is format [i] = '%' ?"}-->|no|p1("print format[i]");
 
-    if2{"is format[i + 1] = '\0'"}-->|yes|r2((end, return -1));
-    if2{"is format[i + 1] = '\0'"}-->|no|f2(for loop);
-    f2(for loop)-->if3{"is format[i + 1] = especific char"};
+    if2{"is format[i + 1] = '\0' ?"}-->|yes|r2((end, return -1));
+    if2{"is format[i + 1] = '\0' ?"}-->|no|f2(for loop);
+    f2(for loop)-->if3{"is format[i + 1] = especific char?"};
 
-    if3{"is format[i + 1] = especific char"}-->|no|pr["print %, print format[i + 1]"];
-    if3{"is format[i + 1] = especific char"}-->|yes|call["call corresponding function"];
+    if3{"is format[i + 1] = especific char?"}-->|no|pr["print %, print format[i + 1]"];
+    if3{"is format[i + 1] = especific char?"}-->|yes|call["call corresponding function"];
     call["call corresponding function"]-->finish["print arguments"];
 
 ```
