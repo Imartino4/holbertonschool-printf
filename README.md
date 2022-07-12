@@ -40,7 +40,7 @@ graph TD;
 
     if3{"is format[i + 1] = sspecific char?"}-->|no|pr["print %, print format[i + 1]"];
     if3{"is format[i + 1] = specific char?"}-->|yes|call["call to corresponding function"];
-    call["call corresponding function"]-->finish["print arguments"];
+    call["call to corresponding function"]-->finish["print arguments"];
 
 ```
 
@@ -57,7 +57,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 
 <h3> Examples </h3>
 
-1- Printing a char
+1- Print a char
 <pre><code>int main(void)
 {
 	_printf("%c\n", "H");
@@ -66,7 +66,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 	
 	Output: H
 	
-2- Printing a string
+2- Print a string
 <pre><code>int main(void)
 {
 	string = "World";
@@ -76,7 +76,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 
 	Output: Hello-World
 
-3- Printing an int
+3- Print an int
 <pre><code>int main(void)
 {
 	int i = 128;
@@ -87,7 +87,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 	Output: 29-128
 
 
-4- Printing %
+4- Print %
 <pre><code>int main(void)
 {
 	int i = 35;
@@ -97,7 +97,7 @@ Conversion specifications are introduced by a '%' (for example %s if you want to
 
 	Output: There is a 35 % chance of rain
 
-5- Converting a int to binary
+5- Convert int to binary
 <pre><code>int main(void)
 {
 	int i = 777;
