@@ -40,7 +40,7 @@ graph TD;
 
     if3{"is format[i + 1] = especific char"}-->|no|pr["print %, print format[i + 1]"];
     if3{"is format[i + 1] = especific char"}-->|yes|call["call corresponding function"];
-    call["call corresponding function"]-->end[print arguments];
+    call["call corresponding function"]-->end["print arguments"];
 
 ```
 
