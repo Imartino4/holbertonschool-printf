@@ -22,9 +22,9 @@ In case of succes this function return the number of printed characters (null ch
 ```mermaid
 graph TD;
 
-    s((Start))-->i[/imput: const char *format, .../];
+    s((Start))-->i[/input: const char *format, .../];
 
-    i[/imput: const char *format, .../]-->f1{is format != '\0' ?};
+    i[/input: const char *format, .../]-->f1{is format != '\0' ?};
 
     f1{is format != '\0' ?}-->|no|r1((end, return -1));
     f1{is format != '\0' ?}-->|yes|fl(for loop);
@@ -36,10 +36,10 @@ graph TD;
 
     if2{"is format[i + 1] = '\0' ?"}-->|yes|r2((end, return -1));
     if2{"is format[i + 1] = '\0' ?"}-->|no|f2(for loop);
-    f2(for loop)-->if3{"is format[i + 1] = especific char?"};
+    f2(for loop)-->if3{"is format[i + 1] = specific char?"};
 
-    if3{"is format[i + 1] = especific char?"}-->|no|pr["print %, print format[i + 1]"];
-    if3{"is format[i + 1] = especific char?"}-->|yes|call["call corresponding function"];
+    if3{"is format[i + 1] = sspecific char?"}-->|no|pr["print %, print format[i + 1]"];
+    if3{"is format[i + 1] = specific char?"}-->|yes|call["call to corresponding function"];
     call["call corresponding function"]-->finish["print arguments"];
 
 ```
